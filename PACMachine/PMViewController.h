@@ -10,4 +10,5 @@
 
 @interface PMViewController : UIViewController
 
+- (IBAction)initiateButtonPressed:(id)sender;
 @end

@@ -29,7 +29,7 @@
 	// Do any additional setup after loading the view.
     UIImage *background = [UIImage imageNamed:@"atm_2_Page_3.jpg"];
     
-    CGRect rect = CGRectMake(0, 0, 1068, 800);
+    CGRect rect = CGRectMake(0, 0, 1068, 730);
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];
     imageView.image = background;
     
@@ -47,4 +47,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)donateActionInitiated:(id)sender {
+    [self performSegueWithIdentifier:@"donateAsLobbyist" sender:sender];
+}
 @end

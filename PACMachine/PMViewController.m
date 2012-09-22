@@ -20,7 +20,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     UIImage *background = [UIImage imageNamed:@"atm_2_Page_1.jpg"];
     
-    CGRect rect = CGRectMake(0, 0, 1068, 800);
+    CGRect rect = CGRectMake(0, 0, 1068, 730);
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];
     imageView.image = background;
     
@@ -38,4 +38,17 @@
     return YES;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"introToCategorySelect"]) {
+        NSLog(@"in the segue class");
+        // send whatever you need to the new view controller
+        NSLog(@"%@", [segue destinationViewController]);
+    }
+}
+
+- (IBAction)initiateButtonPressed:(id)sender {
+    NSLog(@"Made it!");
+    [self performSegueWithIdentifier:@"introToCategorySelect" sender: sender];
+}
 @end

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface PMCategorySelectViewController : UIViewController
+- (IBAction)lobbyistButtonPressed:(id)sender;
+
+- (IBAction)personButtonPressed:(id)sender;
 
 @end

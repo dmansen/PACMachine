@@ -10,4 +10,5 @@
 
 @interface PMDonateViewController : UIViewController
 
+- (IBAction)donateActionInitiated:(id)sender;
 @end
