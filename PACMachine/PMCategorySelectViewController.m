@@ -7,12 +7,15 @@
 //
 
 #import "PMCategorySelectViewController.h"
+#import "PMDonateViewController.h"
 
 @interface PMCategorySelectViewController ()
 
 @end
 
 @implementation PMCategorySelectViewController
+
+@synthesize lobbyist;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,11 +50,21 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"categoryToDonate"]) {
+        PMDonateViewController *viewController = [segue destinationViewController];
+        viewController.lobbyist = self.lobbyist;
+    }
+}
+
 - (IBAction)lobbyistButtonPressed:(id)sender {
+    self.lobbyist = YES;
     [self performSegueWithIdentifier:@"categoryToDonate" sender:sender];
 }
 
 - (IBAction)personButtonPressed:(id)sender {
+    self.lobbyist = NO;
     [self performSegueWithIdentifier:@"categoryToDonate" sender:sender];
 }
 @end

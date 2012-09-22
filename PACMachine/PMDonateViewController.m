@@ -14,6 +14,8 @@
 
 @implementation PMDonateViewController
 
+@synthesize lobbyist;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -48,6 +50,10 @@
 }
 
 - (IBAction)donateActionInitiated:(id)sender {
-    [self performSegueWithIdentifier:@"donateAsLobbyist" sender:sender];
+    if(self.lobbyist) {
+        [self performSegueWithIdentifier:@"donateAsLobbyist" sender:sender];
+    } else {
+        [self performSegueWithIdentifier:@"donateAsPerson" sender:sender];
+    }
 }
 @end

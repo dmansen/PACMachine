@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface PMCategorySelectViewController : UIViewController
+
+@property (readwrite) BOOL lobbyist;
+
 - (IBAction)lobbyistButtonPressed:(id)sender;
 
 - (IBAction)personButtonPressed:(id)sender;

@@ -27,6 +27,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    UIImage *background = [UIImage imageNamed:@"atm_2_Page_5.jpg"];
+    
+    CGRect rect = CGRectMake(0, 0, 1068, 730);
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];
+    imageView.image = background;
+    
+    [self.view addSubview:imageView];
 }
 
 - (void)viewDidUnload
@@ -38,6 +45,25 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    SEL resetSelector = @selector(resetSystem);
+    
+    NSMethodSignature * sig = nil;
+    sig = [[self class] instanceMethodSignatureForSelector:resetSelector];
+    
+    NSInvocation * myInvocation = nil;
+    myInvocation = [NSInvocation invocationWithMethodSignature:sig];
+    [myInvocation setTarget:self];
+    [myInvocation setSelector:resetSelector];
+    
+    [NSTimer scheduledTimerWithTimeInterval:20 invocation:myInvocation repeats:NO];
+}
+
+- (void)resetSystem {
+    [self performSegueWithIdentifier:@"resetSystemPerson" sender:self];
 }
 
 @end

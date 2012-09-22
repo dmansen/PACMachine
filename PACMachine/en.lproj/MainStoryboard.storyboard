@@ -104,6 +104,9 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="w7E-Zg-G0y"/>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="resetSystemLobbyist" id="Hhb-eD-MRh"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-1103" y="-180"/>
@@ -122,7 +125,7 @@
                     <navigationItem key="navigationItem" id="SdS-s2-Ion"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="2" kind="push" identifier="resetSystem" id="smA-lb-BPl"/>
+                        <segue destination="2" kind="push" identifier="resetSystemPerson" id="smA-lb-BPl"/>
                     </connections>
                 </viewController>
             </objects>

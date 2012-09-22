@@ -10,5 +10,7 @@
 
 @interface PMDonateViewController : UIViewController
 
+@property (readwrite) BOOL lobbyist;
+
 - (IBAction)donateActionInitiated:(id)sender;
 @end
