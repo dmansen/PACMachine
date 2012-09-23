@@ -44,14 +44,39 @@
 }
 
 - (NSString *)backgroundFileName {
-    return @"atm_2_Page_3.jpg";
+    return @"ASM_v2_Page_04.jpg";
 }
 
-- (IBAction)donateActionInitiated:(id)sender {
+- (IBAction)donate1Dollar:(id)sender {
     if(self.lobbyist) {
-        [self performSegueWithIdentifier:@"donateAsLobbyist" sender:sender];
+        [self performSegueWithIdentifier:@"donateAsLobbyist1" sender:sender];
     } else {
         [self performSegueWithIdentifier:@"donateAsPerson" sender:sender];
     }
 }
+
+- (IBAction)donate10Dollars:(id)sender {
+    if(self.lobbyist) {
+        [self performSegueWithIdentifier:@"donateAsLobbyist10" sender:sender];
+    } else {
+        [self performSegueWithIdentifier:@"donateAsPerson" sender:sender];
+    }
+}
+
+- (IBAction)donate20Dollars:(id)sender {
+    if(self.lobbyist) {
+        [self performSegueWithIdentifier:@"donateAsLobbyist20" sender:sender];
+    } else {
+        [self performSegueWithIdentifier:@"donateAsPerson" sender:sender];
+    }
+}
+
+- (IBAction)donate100Dollars:(id)sender {
+    if(self.lobbyist) {
+        [self performSegueWithIdentifier:@"donateAsLobbyist100" sender:sender];
+    } else {
+        [self performSegueWithIdentifier:@"donateAsPerson" sender:sender];
+    }
+}
+
 @end

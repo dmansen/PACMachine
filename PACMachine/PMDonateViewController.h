@@ -13,6 +13,9 @@
 
 @property (readwrite) BOOL lobbyist;
 @property (readwrite) int donationAmount;
+- (IBAction)donate10Dollars:(id)sender;
+- (IBAction)donate1Dollar:(id)sender;
+- (IBAction)donate20Dollars:(id)sender;
+- (IBAction)donate100Dollars:(id)sender;
 
-- (IBAction)donateActionInitiated:(id)sender;
 @end

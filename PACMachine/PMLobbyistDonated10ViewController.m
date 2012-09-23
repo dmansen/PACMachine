@@ -40,4 +40,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (NSString *)backgroundFileName {
+    return @"ASM_v2_Page_07.jpg";
+}
+
 @end

@@ -52,7 +52,7 @@
 }
 
 - (NSString *)backgroundFileName {
-    return @"atm_2_Page_2.jpg";
+    return @"ASM_v2_Page_03.jpg";
 }
 
 - (IBAction)lobbyistButtonPressed:(id)sender {

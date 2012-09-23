@@ -35,6 +35,11 @@
     // Release any retained subviews of the main view.
 }
 
+- (NSString *)backgroundFileName {
+    NSLog(@"in 100");
+    return @"ASM_v2_Page_09.jpg";
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);

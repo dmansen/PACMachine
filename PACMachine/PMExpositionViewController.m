@@ -1,18 +1,18 @@
 //
-//  PMLobbyistDonated20ViewController.m
+//  PMExpositionViewController.m
 //  PACMachine
 //
 //  Created by Derek Mansen on 9/23/12.
 //  Copyright (c) 2012 ArtHack. All rights reserved.
 //
 
-#import "PMLobbyistDonated20ViewController.h"
+#import "PMExpositionViewController.h"
 
-@interface PMLobbyistDonated20ViewController ()
+@interface PMExpositionViewController ()
 
 @end
 
-@implementation PMLobbyistDonated20ViewController
+@implementation PMExpositionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,8 +40,11 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (NSString *)backgroundFileName {
-    return @"ASM_v2_Page_08.jpg";
+-(NSString *)backgroundFileName {
+    return @"ASM_v2_Page_02.jpg";
 }
 
+- (IBAction)nextButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"next" sender: sender];
+}
 @end

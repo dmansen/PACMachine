@@ -53,7 +53,7 @@
 }
 
 - (void)resetSystem {
-    [self performSegueWithIdentifier:[self resetSegueName] sender:self];
+    [self performSegueWithIdentifier:@"resetSystem" sender:self];
 }
 
 - (NSString *)resetSegueName {

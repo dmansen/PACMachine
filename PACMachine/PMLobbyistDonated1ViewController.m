@@ -45,7 +45,7 @@
 }
 
 - (NSString *)backgroundFileName {
-    return @"atm_2_Page_4.jpg";
+    return @"ASM_v2_Page_06.jpg";
 }
 
 @end

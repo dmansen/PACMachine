@@ -32,10 +32,10 @@
 }
 
 - (NSString *)backgroundFileName {
-    return @"atm_2_Page_1.jpg";
+    return @"ASM_v2_Page_01.jpg";
 }
 
 - (IBAction)initiateButtonPressed:(id)sender {
-    [self performSegueWithIdentifier:@"introToCategorySelect" sender: sender];
+    [self performSegueWithIdentifier:@"next" sender: sender];
 }
 @end
