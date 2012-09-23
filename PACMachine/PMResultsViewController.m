@@ -37,6 +37,8 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [super viewDidAppear:animated];
+    NSLog(@"setting up timer");
     SEL resetSelector = @selector(resetSystem);
     
     NSMethodSignature * sig = nil;
@@ -48,7 +50,6 @@
     [myInvocation setSelector:resetSelector];
     
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:20 invocation:myInvocation repeats:NO];
-    [timer invalidate];
 }
 
 - (void)resetSystem {

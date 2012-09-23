@@ -18,13 +18,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    UIImage *background = [UIImage imageNamed:@"atm_2_Page_1.jpg"];
-    
-    CGRect rect = CGRectMake(0, 0, 1068, 762);
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];
-    imageView.image = background;
-    
-    [self.view addSubview:imageView];
 }
 
 - (void)viewDidUnload
@@ -36,6 +29,10 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
+}
+
+- (NSString *)backgroundFileName {
+    return @"atm_2_Page_1.jpg";
 }
 
 - (IBAction)initiateButtonPressed:(id)sender {

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PMBackgroundImageViewController.h"
 
-@interface PMDonateViewController : UIViewController
+@interface PMDonateViewController : PMBackgroundImageViewController
 
 @property (readwrite) BOOL lobbyist;
+@property (readwrite) int donationAmount;
 
 - (IBAction)donateActionInitiated:(id)sender;
 @end

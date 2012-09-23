@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PMBackgroundImageViewController.h"
 
-@interface PMCategorySelectViewController : UIViewController
-
+@interface PMCategorySelectViewController : PMBackgroundImageViewController
 @property (readwrite) BOOL lobbyist;
 
 - (IBAction)lobbyistButtonPressed:(id)sender;

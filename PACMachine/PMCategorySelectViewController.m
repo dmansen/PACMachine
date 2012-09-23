@@ -30,13 +30,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    UIImage *background = [UIImage imageNamed:@"atm_2_Page_2.jpg"];
-    
-    CGRect rect = CGRectMake(0, 0, 1068, 762);
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];
-    imageView.image = background;
-    
-    [self.view addSubview:imageView];
 }
 
 - (void)viewDidUnload
@@ -56,6 +49,10 @@
         PMDonateViewController *viewController = [segue destinationViewController];
         viewController.lobbyist = self.lobbyist;
     }
+}
+
+- (NSString *)backgroundFileName {
+    return @"atm_2_Page_2.jpg";
 }
 
 - (IBAction)lobbyistButtonPressed:(id)sender {

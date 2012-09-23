@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PMBackgroundImageViewController.h"
 
-@interface PMResultsViewController : UIViewController
+@interface PMResultsViewController : PMBackgroundImageViewController
 - (NSString *)resetSegueName;
 @end

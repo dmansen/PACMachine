@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PMBackgroundImageViewController.h"
 
-@interface PMViewController : UIViewController
+@interface PMViewController : PMBackgroundImageViewController
 
 - (IBAction)initiateButtonPressed:(id)sender;
 @end
