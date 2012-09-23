@@ -47,7 +47,8 @@
     [myInvocation setTarget:self];
     [myInvocation setSelector:resetSelector];
     
-    [NSTimer scheduledTimerWithTimeInterval:20 invocation:myInvocation repeats:NO];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:20 invocation:myInvocation repeats:NO];
+    [timer invalidate];
 }
 
 - (void)resetSystem {

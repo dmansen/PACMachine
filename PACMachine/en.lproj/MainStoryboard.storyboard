@@ -11,7 +11,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfm-cT-y0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Donate Screen" id="EEm-yL-QC7" customClass="PMDonateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Px-c7-49d">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8j5-eW-bxM">
@@ -34,6 +34,9 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="AYr-CJ-Jjz"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <segue destination="2ba-9i-sJQ" kind="push" identifier="donateAsLobbyist" id="DKm-UM-xYG"/>
@@ -63,7 +66,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="PMViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Av9-k4-Rck">
@@ -86,6 +89,9 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="HPt-M4-vDf"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <segue destination="z5q-BC-frt" kind="push" identifier="introToCategorySelect" id="MJQ-dD-Phk"/>
@@ -100,18 +106,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcf-sw-Bcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Lobbyist Donated" id="2ba-9i-sJQ" customClass="PMLobbyistDonatedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wdk-du-ShY">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="w7E-Zg-G0y"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <segue destination="2" kind="push" identifier="resetSystemLobbyist" id="Hhb-eD-MRh"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-1167" y="980"/>
+            <point key="canvasLocation" x="-2111" y="940"/>
         </scene>
         <!--Person Donated View Controller - Person Donated-->
         <scene sceneID="kGk-Fh-vKn">
@@ -119,19 +127,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fb0-RE-00q" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Person Donated" id="mC2-jH-r4n" customClass="PMPersonDonatedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2tE-e1-F9i">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="SdS-s2-Ion"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <segue destination="2" kind="push" identifier="resetSystemPerson" id="smA-lb-BPl"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="952" y="908"/>
+            <point key="canvasLocation" x="-648" y="940"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KDf-Fg-3Ho">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woG-1t-bVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="aUQ-YQ-u3Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c1h-Y6-CMA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="8PG-ff-p8l">
+                                <rect key="frame" x="98" y="328" width="666" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="868" y="940"/>
         </scene>
         <!--Category Select View Controller - Category Select-->
         <scene sceneID="udA-Pw-FL1">
@@ -139,7 +177,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8e-te-anh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Category Select" id="z5q-BC-frt" customClass="PMCategorySelectViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2eq-Ad-UaW">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ms8-QF-d9m">
@@ -177,6 +215,9 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="hD0-pV-izy"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="EEm-yL-QC7" kind="push" identifier="categoryToDonate" id="DCL-mv-t4U"/>
                     </connections>
