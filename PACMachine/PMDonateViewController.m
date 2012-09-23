@@ -31,7 +31,7 @@
 	// Do any additional setup after loading the view.
     UIImage *background = [UIImage imageNamed:@"atm_2_Page_3.jpg"];
     
-    CGRect rect = CGRectMake(0, 0, 1068, 730);
+    CGRect rect = CGRectMake(0, 0, 1068, 762);
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:rect];
     imageView.image = background;
     
