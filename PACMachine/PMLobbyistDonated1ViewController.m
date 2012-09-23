@@ -1,18 +1,18 @@
 //
-//  PMPersonDonatedViewController.m
+//  PMLobbyistDonatedViewController.m
 //  PACMachine
 //
 //  Created by Derek Mansen on 9/22/12.
 //  Copyright (c) 2012 ArtHack. All rights reserved.
 //
 
-#import "PMPersonDonatedViewController.h"
+#import "PMLobbyistDonated1ViewController.h"
 
-@interface PMPersonDonatedViewController ()
+@interface PMLobbyistDonated1ViewController ()
 
 @end
 
-@implementation PMPersonDonatedViewController
+@implementation PMLobbyistDonated1ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,7 +45,7 @@
 }
 
 - (NSString *)backgroundFileName {
-    return @"atm_2_Page_5.jpg";
+    return @"atm_2_Page_4.jpg";
 }
 
 @end

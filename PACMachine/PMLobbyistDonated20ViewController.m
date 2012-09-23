@@ -1,18 +1,18 @@
 //
-//  PMLobbyistDonatedViewController.m
+//  PMLobbyistDonated20ViewController.m
 //  PACMachine
 //
-//  Created by Derek Mansen on 9/22/12.
+//  Created by Derek Mansen on 9/23/12.
 //  Copyright (c) 2012 ArtHack. All rights reserved.
 //
 
-#import "PMLobbyistDonatedViewController.h"
+#import "PMLobbyistDonated20ViewController.h"
 
-@interface PMLobbyistDonatedViewController ()
+@interface PMLobbyistDonated20ViewController ()
 
 @end
 
-@implementation PMLobbyistDonatedViewController
+@implementation PMLobbyistDonated20ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,14 +38,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (NSString *)resetSegueName {
-    return @"resetSystemLobbyist";
-}
-
-- (NSString *)backgroundFileName {
-    return @"atm_2_Page_4.jpg";
 }
 
 @end

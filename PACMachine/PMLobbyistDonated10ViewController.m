@@ -1,18 +1,18 @@
 //
-//  PMPersonDonatedViewController.m
+//  PMLobbyistDonated10ViewController.m
 //  PACMachine
 //
-//  Created by Derek Mansen on 9/22/12.
+//  Created by Derek Mansen on 9/23/12.
 //  Copyright (c) 2012 ArtHack. All rights reserved.
 //
 
-#import "PMPersonDonatedViewController.h"
+#import "PMLobbyistDonated10ViewController.h"
 
-@interface PMPersonDonatedViewController ()
+@interface PMLobbyistDonated10ViewController ()
 
 @end
 
-@implementation PMPersonDonatedViewController
+@implementation PMLobbyistDonated10ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,14 +38,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (NSString *)resetSegueName {
-    return @"resetSystem";
-}
-
-- (NSString *)backgroundFileName {
-    return @"atm_2_Page_5.jpg";
 }
 
 @end

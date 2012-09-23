@@ -39,12 +39,15 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="2ba-9i-sJQ" kind="push" identifier="donateAsLobbyist" id="DKm-UM-xYG"/>
+                        <segue destination="2ba-9i-sJQ" kind="push" identifier="donateAsLobbyist1" id="DKm-UM-xYG"/>
                         <segue destination="mC2-jH-r4n" kind="push" identifier="donateAsPerson" id="fm9-or-cNL"/>
+                        <segue destination="tYN-0k-TBz" kind="push" identifier="donateAsLobbyist10" id="qbl-sX-Igy"/>
+                        <segue destination="dHZ-ZU-zlm" kind="push" identifier="donateAsLobbyist20" id="5WF-dh-B0l"/>
+                        <segue destination="qCa-gm-L5J" kind="push" identifier="donateAsLobbyist100" id="7Se-zW-4pv"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1928" y="-1073"/>
+            <point key="canvasLocation" x="1768" y="-1065"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cTI-r7-vd4">
@@ -100,11 +103,11 @@
             </objects>
             <point key="canvasLocation" x="-2089" y="-1065"/>
         </scene>
-        <!--Lobbyist Donated View Controller - Lobbyist Donated-->
+        <!--Lobbyist Donated1 View Controller - Lobbyist Donated-->
         <scene sceneID="8bf-FB-Jrc">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcf-sw-Bcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Lobbyist Donated" id="2ba-9i-sJQ" customClass="PMLobbyistDonatedViewController" sceneMemberID="viewController">
+                <viewController title="Lobbyist Donated" id="2ba-9i-sJQ" customClass="PMLobbyistDonated1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wdk-du-ShY">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -115,11 +118,80 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <segue destination="2" kind="push" identifier="resetSystemLobbyist" id="Hhb-eD-MRh"/>
+                        <segue destination="2" kind="push" identifier="resetSystem" id="Hhb-eD-MRh"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-2111" y="940"/>
+            <point key="canvasLocation" x="-2089" y="-12"/>
+        </scene>
+        <!--Lobbyist Donated20 View Controller-->
+        <scene sceneID="23S-Ro-Hhp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdu-IT-Vnu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="dHZ-ZU-zlm" customClass="PMLobbyistDonated20ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tI3-Eh-fBj">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xol-kB-HL7"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="resetSystem" id="bpV-nU-04t"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-2089" y="952"/>
+        </scene>
+        <!--Lobbyist Donated10 View Controller-->
+        <scene sceneID="rtR-FW-WPV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvI-hU-Q2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="tYN-0k-TBz" customClass="PMLobbyistDonated10ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJ5-Rg-VYF">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xf1-E7-U0z"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="resetSystem" id="gzG-2c-r9S"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-652" y="-12"/>
+        </scene>
+        <!--Lobbyist Donated100 View Controller-->
+        <scene sceneID="3mJ-oi-voF">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xP6-6H-ZBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="qCa-gm-L5J" customClass="PMLobbyistDonated100ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hR6-qV-O9K">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QjZ-7d-wOX"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="resetSystem" id="isc-CY-TUT"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-652" y="968"/>
         </scene>
         <!--Person Donated View Controller - Person Donated-->
         <scene sceneID="kGk-Fh-vKn">
@@ -138,11 +210,11 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="2" kind="push" identifier="resetSystemPerson" id="smA-lb-BPl"/>
+                        <segue destination="2" kind="push" identifier="resetSystem" id="smA-lb-BPl"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-648" y="940"/>
+            <point key="canvasLocation" x="856" y="-52"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KDf-Fg-3Ho">
@@ -169,7 +241,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="868" y="940"/>
+            <point key="canvasLocation" x="916" y="1996"/>
         </scene>
         <!--Category Select View Controller - Category Select-->
         <scene sceneID="udA-Pw-FL1">
@@ -250,29 +322,41 @@
         </scene>
     </scenes>
     <classes>
-        <class className="PMCategorySelectViewController" superclassName="UIViewController">
+        <class className="PMBackgroundImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMBackgroundImageViewController.h"/>
+        </class>
+        <class className="PMCategorySelectViewController" superclassName="PMBackgroundImageViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PMCategorySelectViewController.h"/>
             <relationships>
                 <relationship kind="action" name="lobbyistButtonPressed:"/>
                 <relationship kind="action" name="personButtonPressed:"/>
             </relationships>
         </class>
-        <class className="PMDonateViewController" superclassName="UIViewController">
+        <class className="PMDonateViewController" superclassName="PMBackgroundImageViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PMDonateViewController.h"/>
             <relationships>
                 <relationship kind="action" name="donateActionInitiated:"/>
             </relationships>
         </class>
-        <class className="PMLobbyistDonatedViewController" superclassName="PMResultsViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonatedViewController.h"/>
+        <class className="PMLobbyistDonated100ViewController" superclassName="PMResultsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated100ViewController.h"/>
+        </class>
+        <class className="PMLobbyistDonated10ViewController" superclassName="PMResultsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated10ViewController.h"/>
+        </class>
+        <class className="PMLobbyistDonated1ViewController" superclassName="PMResultsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated1ViewController.h"/>
+        </class>
+        <class className="PMLobbyistDonated20ViewController" superclassName="PMResultsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated20ViewController.h"/>
         </class>
         <class className="PMPersonDonatedViewController" superclassName="PMResultsViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PMPersonDonatedViewController.h"/>
         </class>
-        <class className="PMResultsViewController" superclassName="UIViewController">
+        <class className="PMResultsViewController" superclassName="PMBackgroundImageViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PMResultsViewController.h"/>
         </class>
-        <class className="PMViewController" superclassName="UIViewController">
+        <class className="PMViewController" superclassName="PMBackgroundImageViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PMViewController.h"/>
             <relationships>
                 <relationship kind="action" name="initiateButtonPressed:"/>
@@ -285,6 +369,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="smA-lb-BPl"/>
+        <segue reference="isc-CY-TUT"/>
     </inferredMetricsTieBreakers>
 </document>
