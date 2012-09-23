@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p7s-eh-qka">
-                                <rect key="frame" x="0.0" y="417" width="362" height="146"/>
+                                <rect key="frame" x="0.0" y="417" width="519" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kya-61-w38">
-                                <rect key="frame" x="0.0" y="561" width="362" height="160"/>
+                                <rect key="frame" x="0.0" y="561" width="519" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UPo-3T-bOe">
-                                <rect key="frame" x="693" y="435" width="331" height="138"/>
+                                <rect key="frame" x="545" y="417" width="479" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -56,11 +56,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="donate20Dollars:" destination="EEm-yL-QC7" eventType="touchUpInside" id="sce-wB-Lpl"/>
+                                    <action selector="donate10Dollars:" destination="EEm-yL-QC7" eventType="touchUpInside" id="RxU-zT-PUl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fTA-Aw-dSO">
-                                <rect key="frame" x="693" y="573" width="331" height="148"/>
+                                <rect key="frame" x="545" y="573" width="479" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -84,11 +84,11 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="2ba-9i-sJQ" kind="push" identifier="donateAsLobbyist1" id="DKm-UM-xYG"/>
                         <segue destination="mC2-jH-r4n" kind="push" identifier="donateAsPerson" id="fm9-or-cNL"/>
                         <segue destination="tYN-0k-TBz" kind="push" identifier="donateAsLobbyist10" id="qbl-sX-Igy"/>
                         <segue destination="dHZ-ZU-zlm" kind="push" identifier="donateAsLobbyist20" id="5WF-dh-B0l"/>
                         <segue destination="qCa-gm-L5J" kind="push" identifier="donateAsLobbyist100" id="7Se-zW-4pv"/>
+                        <segue destination="2ba-9i-sJQ" kind="push" identifier="donateAsLobbyist1" id="BIG-BZ-Fnb"/>
                     </connections>
                 </viewController>
             </objects>
@@ -162,6 +162,10 @@
                     <navigationItem key="navigationItem" id="w7E-Zg-G0y"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="pxg-EO-KLB" kind="push" identifier="next" id="Mk7-1v-hSK"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-2089" y="-12"/>
@@ -183,7 +187,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="2" kind="push" identifier="resetSystem" id="bpV-nU-04t"/>
+                        <segue destination="pxg-EO-KLB" kind="push" identifier="next" id="DZS-vC-kgW"/>
                     </connections>
                 </viewController>
             </objects>
@@ -246,7 +250,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="2" kind="push" identifier="resetSystem" id="gzG-2c-r9S"/>
+                        <segue destination="pxg-EO-KLB" kind="push" identifier="next" id="Qcb-s4-ayV"/>
                     </connections>
                 </viewController>
             </objects>
@@ -269,7 +273,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="2" kind="push" identifier="resetSystem" id="isc-CY-TUT"/>
+                        <segue destination="pxg-EO-KLB" kind="push" identifier="next" id="kAp-IB-TH2"/>
                     </connections>
                 </viewController>
             </objects>
@@ -292,57 +296,57 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="2" kind="push" identifier="resetSystem" id="smA-lb-BPl"/>
+                        <segue destination="pxg-EO-KLB" kind="push" identifier="next" id="hfx-kj-jcw"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="856" y="-52"/>
         </scene>
-        <!--View Controller-->
+        <!--Source View Controller-->
         <scene sceneID="A1X-3l-3UV">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avp-GI-4yq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="pxg-EO-KLB" sceneMemberID="viewController">
+                <viewController id="pxg-EO-KLB" customClass="PMSourceViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Lo-WT-hpG">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SGt-5h-PMw"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="nQL-mY-wMb" kind="push" identifier="next" id="4n7-YB-Huj"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="856" y="944"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="KDf-Fg-3Ho">
+        <!--Final Screen View Controller-->
+        <scene sceneID="DxY-qC-5cn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="woG-1t-bVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="aUQ-YQ-u3Y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c1h-Y6-CMA">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17g-Vd-3Fi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="nQL-mY-wMb" customClass="PMFinalScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mYu-vl-y5c">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="8PG-ff-p8l">
-                                <rect key="frame" x="98" y="328" width="666" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" id="x58-SH-XL3"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="resetSystem" id="Eax-0o-f7d"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="916" y="1996"/>
+            <point key="canvasLocation" x="856" y="1856"/>
         </scene>
         <!--Category Select View Controller - Category Select-->
         <scene sceneID="udA-Pw-FL1">
@@ -354,7 +358,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ms8-QF-d9m">
-                                <rect key="frame" x="34" y="396" width="399" height="191"/>
+                                <rect key="frame" x="34" y="396" width="399" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -369,7 +373,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gKA-du-fjx">
-                                <rect key="frame" x="587" y="396" width="417" height="191"/>
+                                <rect key="frame" x="587" y="396" width="417" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -449,6 +453,9 @@
                 <relationship kind="action" name="nextButtonPressed:"/>
             </relationships>
         </class>
+        <class className="PMFinalScreenViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMFinalScreenViewController.h"/>
+        </class>
         <class className="PMLobbyistDonated100ViewController" superclassName="PMResultsViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated100ViewController.h"/>
         </class>
@@ -467,6 +474,9 @@
         <class className="PMResultsViewController" superclassName="PMBackgroundImageViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PMResultsViewController.h"/>
         </class>
+        <class className="PMSourceViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMSourceViewController.h"/>
+        </class>
         <class className="PMViewController" superclassName="PMBackgroundImageViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PMViewController.h"/>
             <relationships>
@@ -480,6 +490,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="smA-lb-BPl"/>
+        <segue reference="Eax-0o-f7d"/>
+        <segue reference="kAp-IB-TH2"/>
     </inferredMetricsTieBreakers>
 </document>

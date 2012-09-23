@@ -1,18 +1,18 @@
 //
-//  PMResultsViewController.m
+//  PMFinalScreenViewController.m
 //  PACMachine
 //
 //  Created by Derek Mansen on 9/23/12.
 //  Copyright (c) 2012 ArtHack. All rights reserved.
 //
 
-#import "PMResultsViewController.h"
+#import "PMFinalScreenViewController.h"
 
-@interface PMResultsViewController ()
+@interface PMFinalScreenViewController ()
 
 @end
 
-@implementation PMResultsViewController
+@implementation PMFinalScreenViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,10 +35,13 @@
     // Release any retained subviews of the main view.
 }
 
+- (NSString *)backgroundFileName {
+    return @"ASM_v2_Page_12.jpg";
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    NSLog(@"setting up timer");
     SEL resetSelector = @selector(resetSystem);
     
     NSMethodSignature * sig = nil;
@@ -49,16 +52,11 @@
     [myInvocation setTarget:self];
     [myInvocation setSelector:resetSelector];
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:10 invocation:myInvocation repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:5 invocation:myInvocation repeats:NO];
 }
 
 - (void)resetSystem {
-    [self performSegueWithIdentifier:@"next" sender:self];
-}
-
-- (NSString *)resetSegueName {
-    [self doesNotRecognizeSelector:_cmd];
-    return nil;
+    [self performSegueWithIdentifier:@"resetSystem" sender:self];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

@@ -48,6 +48,7 @@
 }
 
 - (IBAction)donate1Dollar:(id)sender {
+    NSLog(@"got 1 dollar");
     if(self.lobbyist) {
         [self performSegueWithIdentifier:@"donateAsLobbyist1" sender:sender];
     } else {
@@ -56,6 +57,8 @@
 }
 
 - (IBAction)donate10Dollars:(id)sender {
+    NSLog(@"got 10 dollar");
+
     if(self.lobbyist) {
         [self performSegueWithIdentifier:@"donateAsLobbyist10" sender:sender];
     } else {
@@ -64,6 +67,8 @@
 }
 
 - (IBAction)donate20Dollars:(id)sender {
+    NSLog(@"got 20 dollar");
+
     if(self.lobbyist) {
         [self performSegueWithIdentifier:@"donateAsLobbyist20" sender:sender];
     } else {
@@ -72,11 +77,14 @@
 }
 
 - (IBAction)donate100Dollars:(id)sender {
+    NSLog(@"got 100 dollar");
+
     if(self.lobbyist) {
         [self performSegueWithIdentifier:@"donateAsLobbyist100" sender:sender];
     } else {
         [self performSegueWithIdentifier:@"donateAsPerson" sender:sender];
     }
 }
+
 
 @end
