@@ -53,6 +53,7 @@
     [myInvocation setSelector:resetSelector];
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:10 invocation:myInvocation repeats:NO];
+    [self.timer invalidate];
 }
 
 - (void)resetSystem {
