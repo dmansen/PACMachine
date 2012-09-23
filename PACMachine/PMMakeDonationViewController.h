@@ -8,7 +8,9 @@
 
 #import "PMResultsViewController.h"
 
-@interface PMMakeDonationViewController : PMResultsViewController
+@interface PMMakeDonationViewController : PMBackgroundImageViewController
 - (IBAction)next:(id)sender;
 
+@property (readwrite, nonatomic) NSString *amount;
+@property (readwrite) BOOL lobbyist;
 @end

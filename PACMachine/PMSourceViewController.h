@@ -9,5 +9,6 @@
 #import "PMBackgroundImageViewController.h"
 
 @interface PMSourceViewController : PMBackgroundImageViewController
-
+- (IBAction)nextPressed:(id)sender;
+@property (readwrite, nonatomic) NSTimer *timer;
 @end

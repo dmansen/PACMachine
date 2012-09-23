@@ -52,7 +52,7 @@
     [myInvocation setTarget:self];
     [myInvocation setSelector:resetSelector];
     
-    [NSTimer scheduledTimerWithTimeInterval:5 invocation:myInvocation repeats:NO];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:5 invocation:myInvocation repeats:NO];
 }
 
 - (void)resetSystem {
@@ -64,4 +64,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)nextPressed:(id)sender {
+    [self.timer invalidate];
+    [self resetSystem];
+}
 @end

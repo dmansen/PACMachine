@@ -10,5 +10,6 @@
 #import "PMResultsViewController.h"
 
 @interface PMPersonDonatedViewController : PMResultsViewController
+- (IBAction)nextPressed:(id)sender;
 
 @end

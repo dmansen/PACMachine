@@ -52,7 +52,7 @@
     [myInvocation setTarget:self];
     [myInvocation setSelector:resetSelector];
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:10 invocation:myInvocation repeats:NO];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:10 invocation:myInvocation repeats:NO];
 }
 
 - (void)resetSystem {
@@ -62,6 +62,11 @@
 - (NSString *)resetSegueName {
     [self doesNotRecognizeSelector:_cmd];
     return nil;
+}
+
+- (IBAction)nextPressed:(id)sender {
+    [self.timer invalidate];
+    [self performSegueWithIdentifier:@"next" sender:sender];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

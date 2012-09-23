@@ -10,5 +10,6 @@
 #import "PMResultsViewController.h"
 
 @interface PMLobbyistDonated1ViewController : PMResultsViewController
+- (IBAction)nextPressed:(id)sender;
 
 @end

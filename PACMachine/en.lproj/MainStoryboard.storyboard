@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p7s-eh-qka">
-                                <rect key="frame" x="0.0" y="417" width="519" height="146"/>
+                                <rect key="frame" x="0.0" y="253" width="519" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -26,11 +26,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="donate1Dollar:" destination="EEm-yL-QC7" eventType="touchDragInside" id="WjK-oN-f3T"/>
+                                    <action selector="donate1Dollar:" destination="EEm-yL-QC7" eventType="touchUpInside" id="gde-Er-87D"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kya-61-w38">
-                                <rect key="frame" x="0.0" y="561" width="519" height="160"/>
+                                <rect key="frame" x="0.0" y="550" width="519" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UPo-3T-bOe">
-                                <rect key="frame" x="545" y="417" width="479" height="156"/>
+                                <rect key="frame" x="545" y="253" width="479" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -60,7 +60,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fTA-Aw-dSO">
-                                <rect key="frame" x="545" y="573" width="479" height="148"/>
+                                <rect key="frame" x="545" y="549" width="479" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -71,7 +71,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="donate100Dollars:" destination="EEm-yL-QC7" eventType="touchDragInside" id="P4M-lU-glo"/>
+                                    <action selector="donate100Dollars:" destination="EEm-yL-QC7" eventType="touchUpInside" id="JLN-VK-TXe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -196,6 +196,23 @@
                     <view key="view" contentMode="scaleToFill" id="Wdk-du-ShY">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BLu-Q3-UdM">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPressed:" destination="2ba-9i-sJQ" eventType="touchUpInside" id="qct-bY-zNG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -218,6 +235,23 @@
                     <view key="view" contentMode="scaleToFill" id="tI3-Eh-fBj">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fYQ-64-EOT">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPressed:" destination="dHZ-ZU-zlm" eventType="touchUpInside" id="Stq-e5-IPo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -281,6 +315,23 @@
                     <view key="view" contentMode="scaleToFill" id="YJ5-Rg-VYF">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JDs-QB-MrS">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPressed:" destination="tYN-0k-TBz" eventType="touchUpInside" id="3eo-lR-vl3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -304,6 +355,23 @@
                     <view key="view" contentMode="scaleToFill" id="hR6-qV-O9K">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IJW-f4-8GJ">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPressed:" destination="qCa-gm-L5J" eventType="touchUpInside" id="ZFr-CX-6IN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -327,6 +395,23 @@
                     <view key="view" contentMode="scaleToFill" id="2tE-e1-F9i">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ONZ-Dt-llb">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPressed:" destination="mC2-jH-r4n" eventType="touchUpInside" id="tBd-ZH-5Eq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -350,6 +435,23 @@
                     <view key="view" contentMode="scaleToFill" id="1Lo-WT-hpG">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tHO-zG-2UO">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPressed:" destination="pxg-EO-KLB" eventType="touchUpInside" id="HZv-BN-0gO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -373,6 +475,23 @@
                     <view key="view" contentMode="scaleToFill" id="mYu-vl-y5c">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9DX-0n-25Y">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPressed:" destination="nQL-mY-wMb" eventType="touchUpInside" id="ffd-cB-ajh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -467,6 +586,87 @@
             <point key="canvasLocation" x="-3503" y="-1073"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="PMBackgroundImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMBackgroundImageViewController.h"/>
+        </class>
+        <class className="PMCategorySelectViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMCategorySelectViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="lobbyistButtonPressed:"/>
+                <relationship kind="action" name="personButtonPressed:"/>
+            </relationships>
+        </class>
+        <class className="PMDonateViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMDonateViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="donate100Dollars:"/>
+                <relationship kind="action" name="donate10Dollars:"/>
+                <relationship kind="action" name="donate1Dollar:"/>
+                <relationship kind="action" name="donate20Dollars:"/>
+            </relationships>
+        </class>
+        <class className="PMExpositionViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMExpositionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextButtonPressed:"/>
+            </relationships>
+        </class>
+        <class className="PMFinalScreenViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMFinalScreenViewController.h"/>
+        </class>
+        <class className="PMLobbyistDonated100ViewController" superclassName="PMResultsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated100ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextPressed:"/>
+            </relationships>
+        </class>
+        <class className="PMLobbyistDonated10ViewController" superclassName="PMResultsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated10ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextPressed:"/>
+            </relationships>
+        </class>
+        <class className="PMLobbyistDonated1ViewController" superclassName="PMResultsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated1ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextPressed:"/>
+            </relationships>
+        </class>
+        <class className="PMLobbyistDonated20ViewController" superclassName="PMResultsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated20ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextPressed:"/>
+            </relationships>
+        </class>
+        <class className="PMMakeDonationViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMMakeDonationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
+        <class className="PMPersonDonatedViewController" superclassName="PMResultsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMPersonDonatedViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextPressed:"/>
+            </relationships>
+        </class>
+        <class className="PMResultsViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMResultsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextPressed:"/>
+            </relationships>
+        </class>
+        <class className="PMSourceViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMSourceViewController.h"/>
+        </class>
+        <class className="PMViewController" superclassName="PMBackgroundImageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="initiateButtonPressed:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -474,6 +674,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Eax-0o-f7d"/>
-        <segue reference="Qcb-s4-ayV"/>
+        <segue reference="hfx-kj-jcw"/>
     </inferredMetricsTieBreakers>
 </document>

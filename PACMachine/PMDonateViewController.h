@@ -12,7 +12,7 @@
 @interface PMDonateViewController : PMBackgroundImageViewController
 
 @property (readwrite) BOOL lobbyist;
-@property (readwrite) int donationAmount;
+@property (readwrite) NSString *amount;
 - (IBAction)donate1Dollar:(id)sender;
 - (IBAction)donate20Dollars:(id)sender;
 - (IBAction)donate100Dollars:(id)sender;

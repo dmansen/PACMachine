@@ -10,4 +10,6 @@
 
 @interface PMFinalScreenViewController : PMBackgroundImageViewController
 
+- (IBAction)nextPressed:(id)sender;
+@property (readwrite, nonatomic) NSTimer *timer;
 @end

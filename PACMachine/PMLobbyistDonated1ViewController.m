@@ -47,5 +47,4 @@
 - (NSString *)backgroundFileName {
     return @"ASM_v2_Page_06.jpg";
 }
-
 @end

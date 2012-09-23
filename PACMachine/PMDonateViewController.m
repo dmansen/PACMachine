@@ -19,7 +19,7 @@
 @implementation PMDonateViewController
 
 @synthesize lobbyist;
-@synthesize donationAmount;
+@synthesize amount;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -54,19 +54,16 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     PMDonateViewController *viewController = [segue destinationViewController];
     viewController.lobbyist = self.lobbyist;
+    viewController.amount = self.amount;
 }
 
 - (IBAction)donate1Dollar:(id)sender {
     NSLog(@"got 1 dollar");
     if(self.lobbyist) {
-        PMLobbyistDonated1ViewController *viewController = [sender destinationViewController];
-        viewController.amount = @"1";
-        viewController.lobbyist = YES;
+        self.amount = @"1";
         [self performSegueWithIdentifier:@"next" sender:sender];
     } else {
-        PMLobbyistDonated1ViewController *viewController = [sender destinationViewController];
-        viewController.lobbyist = NO;
-        [self performSegueWithIdentifier:@"donateAsPerson" sender:sender];
+        [self performSegueWithIdentifier:@"next" sender:sender];
     }
 }
 
@@ -74,13 +71,9 @@
     NSLog(@"got 10 dollar");
 
     if(self.lobbyist) {
-        PMLobbyistDonated10ViewController *viewController = [sender destinationViewController];
-        viewController.amount = @"10";
-        viewController.lobbyist = YES;
+        self.amount = @"10";
         [self performSegueWithIdentifier:@"next" sender:sender];
     } else {
-        PMLobbyistDonated1ViewController *viewController = [sender destinationViewController];
-        viewController.lobbyist = NO;
         [self performSegueWithIdentifier:@"next" sender:sender];
     }
 }
@@ -89,14 +82,9 @@
     NSLog(@"got 20 dollar");
 
     if(self.lobbyist) {
-        PMLobbyistDonated20ViewController *viewController = [sender destinationViewController];
-        viewController.amount = @"20";
-        viewController.lobbyist = YES;
-
+        self.amount = @"20";
         [self performSegueWithIdentifier:@"next" sender:sender];
     } else {
-        PMLobbyistDonated20ViewController *viewController = [sender destinationViewController];
-        viewController.lobbyist = NO;
         [self performSegueWithIdentifier:@"next" sender:sender];
     }
 }
@@ -105,13 +93,9 @@
     NSLog(@"got 100 dollar");
 
     if(self.lobbyist) {
-        PMLobbyistDonated100ViewController *viewController = [sender destinationViewController];
-        viewController.amount = @"100";
-        viewController.lobbyist = YES;
+        self.amount = @"100";
         [self performSegueWithIdentifier:@"next" sender:sender];
     } else {
-        PMLobbyistDonated20ViewController *viewController = [sender destinationViewController];
-        viewController.lobbyist = NO;
         [self performSegueWithIdentifier:@"next" sender:sender];
     }
 }
