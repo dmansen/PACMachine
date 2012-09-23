@@ -38,17 +38,7 @@
     return YES;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if ([segue.identifier isEqualToString:@"introToCategorySelect"]) {
-        NSLog(@"in the segue class");
-        // send whatever you need to the new view controller
-        NSLog(@"%@", [segue destinationViewController]);
-    }
-}
-
 - (IBAction)initiateButtonPressed:(id)sender {
-    NSLog(@"Made it!");
     [self performSegueWithIdentifier:@"introToCategorySelect" sender: sender];
 }
 @end

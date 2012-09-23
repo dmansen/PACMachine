@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PMResultsViewController.h"
 
-@interface PMLobbyistDonatedViewController : UIViewController
+@interface PMLobbyistDonatedViewController : PMResultsViewController
 
 @end

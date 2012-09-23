@@ -47,23 +47,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    SEL resetSelector = @selector(resetSystem);
-    
-    NSMethodSignature * sig = nil;
-    sig = [[self class] instanceMethodSignatureForSelector:resetSelector];
-    
-    NSInvocation * myInvocation = nil;
-    myInvocation = [NSInvocation invocationWithMethodSignature:sig];
-    [myInvocation setTarget:self];
-    [myInvocation setSelector:resetSelector];
-    
-    [NSTimer scheduledTimerWithTimeInterval:20 invocation:myInvocation repeats:NO];
-}
-
-- (void)resetSystem {
-    [self performSegueWithIdentifier:@"resetSystemPerson" sender:self];
+- (NSString *)resetSegueName {
+    return @"resetSystemPerson";
 }
 
 @end

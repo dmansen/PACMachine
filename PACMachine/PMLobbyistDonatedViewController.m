@@ -36,25 +36,6 @@
     [self.view addSubview:imageView];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    SEL resetSelector = @selector(resetSystem);
-    
-    NSMethodSignature * sig = nil;
-    sig = [[self class] instanceMethodSignatureForSelector:resetSelector];
-    
-    NSInvocation * myInvocation = nil;
-    myInvocation = [NSInvocation invocationWithMethodSignature:sig];
-    [myInvocation setTarget:self];
-    [myInvocation setSelector:resetSelector];
-    
-    [NSTimer scheduledTimerWithTimeInterval:20 invocation:myInvocation repeats:NO];
-}
-
-- (void)resetSystem {
-    [self performSegueWithIdentifier:@"resetSystemLobbyist" sender:self];
-}
-
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -64,6 +45,10 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (NSString *)resetSegueName {
+    return @"resetSystemLobbyist";
 }
 
 @end

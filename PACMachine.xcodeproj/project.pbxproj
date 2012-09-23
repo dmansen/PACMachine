@@ -29,6 +29,7 @@
 		65A2E5F7160E605800AED646 /* PMLobbyistDonatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2E5F6160E605800AED646 /* PMLobbyistDonatedViewController.m */; };
 		65A2E5FA160E607500AED646 /* PMPersonDonatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2E5F9160E607500AED646 /* PMPersonDonatedViewController.m */; };
 		65A2E602160E827C00AED646 /* atm_2_Page_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65A2E601160E827C00AED646 /* atm_2_Page_5.jpg */; };
+		65A2E605160F5B6400AED646 /* PMResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2E604160F5B6400AED646 /* PMResultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		65A2E5F8160E607500AED646 /* PMPersonDonatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPersonDonatedViewController.h; sourceTree = "<group>"; };
 		65A2E5F9160E607500AED646 /* PMPersonDonatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPersonDonatedViewController.m; sourceTree = "<group>"; };
 		65A2E601160E827C00AED646 /* atm_2_Page_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atm_2_Page_5.jpg; sourceTree = "<group>"; };
+		65A2E603160F5B6400AED646 /* PMResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMResultsViewController.h; sourceTree = "<group>"; };
+		65A2E604160F5B6400AED646 /* PMResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMResultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 				65A2E5C4160E55B600AED646 /* MainStoryboard.storyboard */,
 				65A2E5F8160E607500AED646 /* PMPersonDonatedViewController.h */,
 				65A2E5F9160E607500AED646 /* PMPersonDonatedViewController.m */,
+				65A2E603160F5B6400AED646 /* PMResultsViewController.h */,
+				65A2E604160F5B6400AED646 /* PMResultsViewController.m */,
 				65A2E601160E827C00AED646 /* atm_2_Page_5.jpg */,
 				65A2E5F5160E605800AED646 /* PMLobbyistDonatedViewController.h */,
 				65A2E5F6160E605800AED646 /* PMLobbyistDonatedViewController.m */,
@@ -306,6 +311,7 @@
 				65A2E5F4160E601500AED646 /* PMDonateViewController.m in Sources */,
 				65A2E5F7160E605800AED646 /* PMLobbyistDonatedViewController.m in Sources */,
 				65A2E5FA160E607500AED646 /* PMPersonDonatedViewController.m in Sources */,
+				65A2E605160F5B6400AED646 /* PMResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
