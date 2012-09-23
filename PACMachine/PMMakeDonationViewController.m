@@ -1,18 +1,18 @@
 //
-//  PMPersonDonatedViewController.m
+//  PMMakeDonationViewController.m
 //  PACMachine
 //
-//  Created by Derek Mansen on 9/22/12.
+//  Created by Derek Mansen on 9/23/12.
 //  Copyright (c) 2012 ArtHack. All rights reserved.
 //
 
-#import "PMPersonDonatedViewController.h"
+#import "PMMakeDonationViewController.h"
 
-@interface PMPersonDonatedViewController ()
+@interface PMMakeDonationViewController ()
 
 @end
 
-@implementation PMPersonDonatedViewController
+@implementation PMMakeDonationViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,17 +35,23 @@
     // Release any retained subviews of the main view.
 }
 
+- (NSString *)backgroundFileName {
+    return @"ASM_v2_Page_05.jpg";
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (NSString *)resetSegueName {
-    return @"resetSystem";
+- (IBAction)next:(id)sender {
+    if(self.lobbyist) {
+        NSString *segue = [NSString stringWithFormat:@"donateAsLobbyist%@", self.amount];
+        NSLog(@"Doing segue: %@", segue);
+        [self performSegueWithIdentifier:segue sender:sender];
+    } else {
+        [self performSegueWithIdentifier:@"donateAsPerson" sender:sender];
+    }
+    
 }
-
-- (NSString *)backgroundFileName {
-    return @"ASM_v2_Page_10.jpg";
-}
-
 @end

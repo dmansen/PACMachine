@@ -11,4 +11,7 @@
 
 @interface PMResultsViewController : PMBackgroundImageViewController
 - (NSString *)resetSegueName;
+
+@property (readwrite, nonatomic) NSString *amount;
+@property (readwrite) BOOL lobbyist;
 @end

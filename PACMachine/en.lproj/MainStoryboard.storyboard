@@ -84,15 +84,55 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <segue destination="mC2-jH-r4n" kind="push" identifier="donateAsPerson" id="fm9-or-cNL"/>
-                        <segue destination="tYN-0k-TBz" kind="push" identifier="donateAsLobbyist10" id="qbl-sX-Igy"/>
-                        <segue destination="dHZ-ZU-zlm" kind="push" identifier="donateAsLobbyist20" id="5WF-dh-B0l"/>
-                        <segue destination="qCa-gm-L5J" kind="push" identifier="donateAsLobbyist100" id="7Se-zW-4pv"/>
-                        <segue destination="2ba-9i-sJQ" kind="push" identifier="donateAsLobbyist1" id="BIG-BZ-Fnb"/>
+                        <segue destination="0HR-As-PNo" kind="push" identifier="next" id="eDc-7d-GLW"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1768" y="-1065"/>
+        </scene>
+        <!--Make Donation View Controller-->
+        <scene sceneID="sJf-V7-pv5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNF-GB-ojU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="0HR-As-PNo" customClass="PMMakeDonationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uyi-K0-ych">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WPx-fW-tb8">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="0HR-As-PNo" eventType="touchUpInside" id="p4e-dU-kf8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eyU-sy-Ffz"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="2ba-9i-sJQ" kind="push" identifier="donateAsLobbyist1" id="5SO-Vh-rju"/>
+                        <segue destination="tYN-0k-TBz" kind="push" identifier="donateAsLobbyist10" id="iVl-KE-AmV"/>
+                        <segue destination="dHZ-ZU-zlm" kind="push" identifier="donateAsLobbyist20" id="yn7-hu-E7a"/>
+                        <segue destination="qCa-gm-L5J" kind="push" identifier="donateAsLobbyist100" id="rhV-QE-l0F"/>
+                        <segue destination="mC2-jH-r4n" kind="push" identifier="donateAsPerson" id="kaO-Bo-v5O"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3156" y="-1065"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cTI-r7-vd4">
@@ -427,63 +467,6 @@
             <point key="canvasLocation" x="-3503" y="-1073"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="PMBackgroundImageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMBackgroundImageViewController.h"/>
-        </class>
-        <class className="PMCategorySelectViewController" superclassName="PMBackgroundImageViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMCategorySelectViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="lobbyistButtonPressed:"/>
-                <relationship kind="action" name="personButtonPressed:"/>
-            </relationships>
-        </class>
-        <class className="PMDonateViewController" superclassName="PMBackgroundImageViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMDonateViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="donate100Dollars:"/>
-                <relationship kind="action" name="donate10Dollars:"/>
-                <relationship kind="action" name="donate1Dollar:"/>
-                <relationship kind="action" name="donate20Dollars:"/>
-            </relationships>
-        </class>
-        <class className="PMExpositionViewController" superclassName="PMBackgroundImageViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMExpositionViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="nextButtonPressed:"/>
-            </relationships>
-        </class>
-        <class className="PMFinalScreenViewController" superclassName="PMBackgroundImageViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMFinalScreenViewController.h"/>
-        </class>
-        <class className="PMLobbyistDonated100ViewController" superclassName="PMResultsViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated100ViewController.h"/>
-        </class>
-        <class className="PMLobbyistDonated10ViewController" superclassName="PMResultsViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated10ViewController.h"/>
-        </class>
-        <class className="PMLobbyistDonated1ViewController" superclassName="PMResultsViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated1ViewController.h"/>
-        </class>
-        <class className="PMLobbyistDonated20ViewController" superclassName="PMResultsViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMLobbyistDonated20ViewController.h"/>
-        </class>
-        <class className="PMPersonDonatedViewController" superclassName="PMResultsViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMPersonDonatedViewController.h"/>
-        </class>
-        <class className="PMResultsViewController" superclassName="PMBackgroundImageViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMResultsViewController.h"/>
-        </class>
-        <class className="PMSourceViewController" superclassName="PMBackgroundImageViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMSourceViewController.h"/>
-        </class>
-        <class className="PMViewController" superclassName="PMBackgroundImageViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PMViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="initiateButtonPressed:"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -491,6 +474,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Eax-0o-f7d"/>
-        <segue reference="kAp-IB-TH2"/>
+        <segue reference="Qcb-s4-ayV"/>
     </inferredMetricsTieBreakers>
 </document>

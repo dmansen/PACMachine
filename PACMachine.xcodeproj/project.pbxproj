@@ -44,6 +44,7 @@
 		65A2E631160F833700AED646 /* ASM_v2_Page_12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65A2E625160F833700AED646 /* ASM_v2_Page_12.jpg */; };
 		65A2E634160F89DD00AED646 /* PMSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2E633160F89DD00AED646 /* PMSourceViewController.m */; };
 		65A2E637160F8A2C00AED646 /* PMFinalScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2E636160F8A2C00AED646 /* PMFinalScreenViewController.m */; };
+		65A2E63A160F901000AED646 /* PMMakeDonationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2E639160F900F00AED646 /* PMMakeDonationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		65A2E633160F89DD00AED646 /* PMSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMSourceViewController.m; sourceTree = "<group>"; };
 		65A2E635160F8A2C00AED646 /* PMFinalScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMFinalScreenViewController.h; sourceTree = "<group>"; };
 		65A2E636160F8A2C00AED646 /* PMFinalScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMFinalScreenViewController.m; sourceTree = "<group>"; };
+		65A2E638160F900F00AED646 /* PMMakeDonationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMMakeDonationViewController.h; sourceTree = "<group>"; };
+		65A2E639160F900F00AED646 /* PMMakeDonationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMMakeDonationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 				65A2E5C1160E55B600AED646 /* PMAppDelegate.h */,
 				65A2E5C2160E55B600AED646 /* PMAppDelegate.m */,
 				65A2E5C4160E55B600AED646 /* MainStoryboard.storyboard */,
+				65A2E638160F900F00AED646 /* PMMakeDonationViewController.h */,
+				65A2E639160F900F00AED646 /* PMMakeDonationViewController.m */,
 				65A2E635160F8A2C00AED646 /* PMFinalScreenViewController.h */,
 				65A2E636160F8A2C00AED646 /* PMFinalScreenViewController.m */,
 				65A2E632160F89DD00AED646 /* PMSourceViewController.h */,
@@ -382,6 +387,7 @@
 				65A2E619160F81C800AED646 /* PMExpositionViewController.m in Sources */,
 				65A2E634160F89DD00AED646 /* PMSourceViewController.m in Sources */,
 				65A2E637160F8A2C00AED646 /* PMFinalScreenViewController.m in Sources */,
+				65A2E63A160F901000AED646 /* PMMakeDonationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
